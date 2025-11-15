@@ -14,7 +14,7 @@ Metrics will now be exposed on port 8889 for you to pull into your external moni
 
 ```bash
 # Confirm Metrics being exposed
-curl -s localhost:8889//metrics/prometheus
+curl -s localhost:8889/metrics/prometheus
 ```
 
 Create a simple systemd file.
