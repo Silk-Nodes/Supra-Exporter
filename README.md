@@ -4,9 +4,14 @@ A simple promethus metrics exporter for Supra.
 ```bash
 git clone https://github.com/Silk-Nodes/Supra-Exporter
 pip3 install --user prometheus_client
+```
 
-# Run
+```
+# EDIT NODE LOG PATH
 cd Supra-Exporter
+nano supra-exporter.py
+
+# RUN
 python3 supra-exporter.py
 ```
 
