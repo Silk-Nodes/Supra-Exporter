@@ -12,11 +12,6 @@ python3 supra-exporter.py
 
 Metrics will now be exposed on port 8889 for you to pull into your external monitroing tools.
 
-```bash
-# Confirm Metrics being exposed
-curl -s localhost:8889/metrics/prometheus
-```
-
 Create a simple systemd file.
 ```bash
 sudo tee /etc/systemd/system/supra-exporter.service > /dev/null << EOF
@@ -39,4 +34,10 @@ EOF
 ```bash
 sudo systemctl enable supra-exporter
 sudo systemctl daemon-reload
+sudo service supra-exporter start
+```
+
+```bash
+# Confirm Metrics being exposed
+curl -s localhost:8889/metrics/prometheus
 ```
