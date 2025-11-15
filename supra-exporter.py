@@ -18,7 +18,7 @@ from prometheus_client import start_http_server, Gauge, CollectorRegistry
 # ------------------------------
 EXPORTER_PORT = 8889
 PUBLIC_BLOCK_URL = "https://rpc-mainnet.supra.com/rpc/v1/block"
-LOG_FILE = "/home/silktacos/mainnet/supra_configs_mainnet/supra_node_logs/supra.log" # Replace with your path
+LOG_FILE = "supra_configs_mainnet/supra_node_logs/supra.log" # Replace with your path
 POLL_INTERVAL = 10  # seconds for public RPC polling
 BLOCK_HEIGHT_REGEX = re.compile(r"Block height:\s*\((\d+)\)")
 
